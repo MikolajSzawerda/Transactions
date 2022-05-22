@@ -1,0 +1,20 @@
+[
+    {
+        "date": "2021-05-13T07:00:05Z",
+        "type": "card",
+        "payment_mean": "John Doe 2222********2222",
+        "description": "REF123457",
+        "currency": "PLN",
+        "amount": 2450,
+        "amount_in_pln": 2450
+    },
+    {
+        "date": "2021-05-14T18:32:26Z",
+        "type": "card",
+        "payment_mean": "John Doe 1111********1111",
+        "description": "REF123456",
+        "currency": "GBP",
+        "amount": 1000,
+        "amount_in_pln": 1000
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "date": "2021-05-14T08:27:09Z",
+        "type": "dp",
+        "payment_mean": "DE91100000000123456789",
+        "description": "FastFood",
+        "currency": "USD",
+        "amount": 599,
+        "amount_in_pln": 599
+    }
+]
