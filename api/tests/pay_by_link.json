@@ -1,0 +1,20 @@
+[
+    {
+        "date": "2021-05-13T01:01:43Z",
+        "type": "pay_by_link",
+        "payment_mean": "mbank",
+        "description": "Gym membership",
+        "currency": "PLN",
+        "amount": 1000,
+        "amount_in_pln": 1000
+    },
+    {
+        "date": "2021-05-13T09:01:43Z",
+        "type": "pay_by_link",
+        "payment_mean": "mbank",
+        "description": "Gym membership",
+        "currency": "EUR",
+        "amount": 3000,
+        "amount_in_pln": 3000
+    }
+]
