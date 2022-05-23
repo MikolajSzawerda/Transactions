@@ -8,20 +8,21 @@ import pytest
 # from parameterized import parameterized
 
 
-def json_correct_data():
+def json_correct_data(filename='data_2.json'):
     module_dir = os.path.dirname(__file__)
-    file_path = os.path.join(module_dir, 'data.json')
+    file_path = os.path.join(module_dir, filename)
     with open(file_path, 'r') as fh:
         data = json.load(fh)
     return data
 
 
-def pay_by_link_proccesed(file_name):
+def request_proccessed(file_name):
     module_dir = os.path.dirname(__file__)
     file_path = os.path.join(module_dir, f'{file_name}.json')
     with open(file_path, 'r') as fh:
         data = json.load(fh)
     return data
+
 
 
 @pytest.fixture
@@ -37,7 +38,7 @@ def test_reporting_pay_by_link(apiclient, report_type):
         report_type: pbl_data
     }, format="json")
     assert response.status_code == status.HTTP_200_OK
-    correct_response = pay_by_link_proccesed(report_type)
+    correct_response = request_proccessed(report_type)
     assert response.json() == correct_response
 
 
@@ -53,5 +54,23 @@ def test_reporting_pay_by_link_lack_of_field(apiclient, report_type):
             report_type: pbl_data
         }, format="json")
         assert response.status_code == status.HTTP_400_BAD_REQUEST
+
+
+def test_example_request(apiclient):
+    url = reverse('report')
+    pbl_data = json_correct_data('example_request.json')
+    response = apiclient.post(url, pbl_data, format="json")
+    assert response.status_code == status.HTTP_200_OK
+    correct_response = request_proccessed('response')
+    assert response.json() == correct_response
+
+
+def test_distant_date_request(apiclient):
+    url = reverse('report')
+    pbl_data = json_correct_data('distant_data.json')
+    response = apiclient.post(url, pbl_data, format="json")
+    assert response.status_code == status.HTTP_200_OK
+    correct_response = request_proccessed('distant_data_response')
+    assert response.json() == correct_response
 
 

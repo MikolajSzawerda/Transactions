@@ -9,6 +9,24 @@
         "amount_in_pln": 2450
     },
     {
+        "date": "2021-05-13T09:01:43Z",
+        "type": "pay_by_link",
+        "payment_mean": "mbank",
+        "description": "Gym membership",
+        "currency": "EUR",
+        "amount": 3000,
+        "amount_in_pln": 13494
+    },
+    {
+        "date": "2021-05-14T08:27:09Z",
+        "type": "dp",
+        "payment_mean": "DE91100000000123456789",
+        "description": "FastFood",
+        "currency": "USD",
+        "amount": 599,
+        "amount_in_pln": 2219
+    },
+    {
         "date": "2021-05-14T18:32:26Z",
         "type": "card",
         "payment_mean": "John Doe 1111********1111",
