@@ -1,11 +1,8 @@
-from asyncio import futures
 from datetime import datetime, timedelta
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import PayByLinkSerializer, DirectPaymentSerializer, CardSerializer
-from sortedcontainers import SortedList
-import time
 from functools import lru_cache
 import requests
 from math import floor
@@ -16,29 +13,41 @@ class InvalidPaymentData(Exception):
     def __init__(self, *args: object) -> None:
         super().__init__(*args)
 
+
+class UnsupportedDate(Exception):
+    def __init__(self, *args: object) -> None:
+        super().__init__(*args)
+
+
 URLS = {
-    'date_interval':'http://api.nbp.pl/api/exchangerates/rates/c/{}/{}/{}'
+    'date_interval': 'http://api.nbp.pl/api/exchangerates/rates/c/{}/{}/{}'
 }
 
-@lru_cache(maxsize=120)
+DAYS_BACKUP = 3
+API_CALL_RETRY = 2
+ACCEPTED_STATUS = set((status.HTTP_200_OK, status.HTTP_404_NOT_FOUND))
+DATE_FORMAT = "%Y-%m-%d"
+
+
+@lru_cache(maxsize=128)
 def perform_api_call(currency: str, date):
-    days_backup = (datetime.strptime(date, "%Y-%m-%d")-timedelta(3))
-    formated_date = days_backup.strftime("%Y-%m-%d")
-    url = URLS['date_interval'].format(currency.lower(), formated_date, date)
-    response = requests.get(url)
-    # print(response)
-    if response.status_code == status.HTTP_200_OK:
-        data = response.json()
-        rate = data['rates'][-1]['bid']
-        return rate
-    days_backup = (days_backup-timedelta(3))
-    url = URLS['date_interval'].format(currency.lower(), days_backup.strftime("%Y-%m-%d"), formated_date)
-    response = requests.get(url)
-    if response.status_code == status.HTTP_200_OK:
-        data = response.json()
-        rate = data['rates'][-1]['bid']
-        return rate
-    return 1
+    num_of_tries = 0
+    st = status.HTTP_200_OK
+    end_date = date
+    while num_of_tries < API_CALL_RETRY and st in ACCEPTED_STATUS:
+        days_backup = (datetime.strptime(end_date, DATE_FORMAT) - timedelta(DAYS_BACKUP))
+        start_date = days_backup.strftime(DATE_FORMAT)
+        url = URLS['date_interval'].format(currency.lower(), start_date, end_date)
+        response = requests.get(url)
+        st = response.status_code
+        if st == status.HTTP_200_OK:
+            data = response.json()
+            rate = data['rates'][-1]['bid']
+            return rate
+        end_date = start_date
+        num_of_tries += 1
+    raise UnsupportedDate
+
 
 def convert_to_pln(data):
     currency = data['currency']
@@ -94,23 +103,16 @@ METHODS = {
         'mean': prepare_card_data
     }
 }
-"""
-with concurrent.futures.ThreadPoolExecutor() as exec:
-        proccesed_repos = [exec.submit(prepare_repository_data, repo, header) for repo in data]
-        for repo in concurrent.futures.as_completed(proccesed_repos):
-            repo_data = repo.result()
-            agreggate_language(repo_data['languages'], agregator)
-            repos.append(repo_data)
-"""
+
 
 @api_view(['POST'])
 def create_report(request):
-    reports = SortedList(key=lambda x: x["date"])
+    reports = list()
     try:
         for key in request.data.keys():
             behaviour = METHODS[key]
-            pbl = request.data.get(key, None)
-            parsed_data = validate_data(pbl, behaviour['serializer'])
+            data = request.data.get(key, None)
+            parsed_data = validate_data(data, behaviour['serializer'])
             with concurrent.futures.ThreadPoolExecutor() as exec:
                 proccesed_reports = [
                     exec.submit(
@@ -118,7 +120,9 @@ def create_report(request):
                         behaviour['mean'](data)) for data in parsed_data
                     ]
             for data in concurrent.futures.as_completed(proccesed_reports):
-                reports.add(data.result())
+                reports.append(data.result())
     except InvalidPaymentData:
         return Response("Invalid data!", status=status.HTTP_400_BAD_REQUEST)
-    return Response(reports.__iter__())
+    except UnsupportedDate:
+        return Response("Invalid data!", status=status.HTTP_400_BAD_REQUEST)
+    return Response(sorted(reports, key=lambda x: x["date"]))

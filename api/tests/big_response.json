@@ -1,0 +1,803 @@
+[
+    {
+        "date": "2021-01-03T01:46:42Z",
+        "type": "card",
+        "payment_mean": "Jcpqnfu Slxmfi 8930********4585",
+        "description": "Fzvtpr",
+        "currency": "EUR",
+        "amount": 6058,
+        "amount_in_pln": 27350
+    },
+    {
+        "date": "2021-01-04T12:47:42Z",
+        "type": "dp",
+        "payment_mean": "6V3EP0MUJ6WSMUIMTD7WOTJE4BUJMJ",
+        "description": "Rbrzuapae",
+        "currency": "PLN",
+        "amount": 88118,
+        "amount_in_pln": 88118
+    },
+    {
+        "date": "2021-01-04T21:50:28Z",
+        "type": "dp",
+        "payment_mean": "C7IARNYZ45ZUHNBKN8XM5F3TH0R53Q",
+        "description": "Oezxtavll",
+        "currency": "USD",
+        "amount": 93676,
+        "amount_in_pln": 348549
+    },
+    {
+        "date": "2021-01-05T01:03:31Z",
+        "type": "card",
+        "payment_mean": "Lhfzan Amdrk 2254********0461",
+        "description": "Ejfmf",
+        "currency": "EUR",
+        "amount": 20237,
+        "amount_in_pln": 91242
+    },
+    {
+        "date": "2021-01-07T00:54:32Z",
+        "type": "pay_by_link",
+        "payment_mean": "SGB",
+        "description": "Ztztnzl",
+        "currency": "PLN",
+        "amount": 85048,
+        "amount_in_pln": 85048
+    },
+    {
+        "date": "2021-01-07T13:35:39Z",
+        "type": "dp",
+        "payment_mean": "RSQBFM0E457P3J36F6EUMQF8QYDEN8",
+        "description": "Iofyhxtb",
+        "currency": "GBP",
+        "amount": 67411,
+        "amount_in_pln": 336171
+    },
+    {
+        "date": "2021-01-08T18:31:32Z",
+        "type": "dp",
+        "payment_mean": "CUFIJUZTBQ8JVWY57PQH78ZB2HK9CI",
+        "description": "Ydfanaiii",
+        "currency": "EUR",
+        "amount": 49991,
+        "amount_in_pln": 222964
+    },
+    {
+        "date": "2021-01-10T02:48:17Z",
+        "type": "dp",
+        "payment_mean": "X3V5V7YZHFH8FOSCTC0A6OT8ZT0UA3",
+        "description": "Mfrhiw",
+        "currency": "PLN",
+        "amount": 55209,
+        "amount_in_pln": 55209
+    },
+    {
+        "date": "2021-01-10T17:23:46Z",
+        "type": "card",
+        "payment_mean": "Wbdei Pmqzntni 5057********8937",
+        "description": "Bcxzjh",
+        "currency": "EUR",
+        "amount": 4864,
+        "amount_in_pln": 21693
+    },
+    {
+        "date": "2021-01-29T01:41:00Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Rdhyb",
+        "currency": "USD",
+        "amount": 23003,
+        "amount_in_pln": 85382
+    },
+    {
+        "date": "2021-02-03T17:45:51Z",
+        "type": "card",
+        "payment_mean": "Aioibt Cbheuqlc 7920********5451",
+        "description": "Kodzjux",
+        "currency": "EUR",
+        "amount": 28144,
+        "amount_in_pln": 124697
+    },
+    {
+        "date": "2021-02-03T18:39:19Z",
+        "type": "pay_by_link",
+        "payment_mean": "mbank",
+        "description": "Jbljgwpp",
+        "currency": "USD",
+        "amount": 2524,
+        "amount_in_pln": 9303
+    },
+    {
+        "date": "2021-02-09T00:18:07Z",
+        "type": "card",
+        "payment_mean": "Cfnpyrk Pvhlbp 4831********7260",
+        "description": "Hzpybu",
+        "currency": "GBP",
+        "amount": 77116,
+        "amount_in_pln": 389181
+    },
+    {
+        "date": "2021-02-10T14:02:14Z",
+        "type": "pay_by_link",
+        "payment_mean": "santander",
+        "description": "Eqcvm",
+        "currency": "USD",
+        "amount": 76140,
+        "amount_in_pln": 279144
+    },
+    {
+        "date": "2021-02-16T15:58:25Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Zrnjwy",
+        "currency": "PLN",
+        "amount": 96149,
+        "amount_in_pln": 96149
+    },
+    {
+        "date": "2021-02-16T23:14:12Z",
+        "type": "dp",
+        "payment_mean": "7W84SVKXEK1I0WHQ52DV3M8KX6DDK7",
+        "description": "Qedkbmawe",
+        "currency": "USD",
+        "amount": 93192,
+        "amount_in_pln": 340989
+    },
+    {
+        "date": "2021-02-19T06:59:45Z",
+        "type": "card",
+        "payment_mean": "Qhzohekky Ylkgqdgnf 0074********1141",
+        "description": "Bcltsjp",
+        "currency": "USD",
+        "amount": 2447,
+        "amount_in_pln": 9012
+    },
+    {
+        "date": "2021-02-20T22:38:36Z",
+        "type": "card",
+        "payment_mean": "Nljpkv Hjdualtif 4000********1201",
+        "description": "Zepmxlqzo",
+        "currency": "EUR",
+        "amount": 1498,
+        "amount_in_pln": 6659
+    },
+    {
+        "date": "2021-02-22T00:28:57Z",
+        "type": "dp",
+        "payment_mean": "YVNYCBRHHOQWX3DQMQO7P4LTPDKZYM",
+        "description": "Tnwxbvm",
+        "currency": "EUR",
+        "amount": 62578,
+        "amount_in_pln": 277646
+    },
+    {
+        "date": "2021-02-25T10:48:46Z",
+        "type": "pay_by_link",
+        "payment_mean": "SGB",
+        "description": "Atvnttma",
+        "currency": "PLN",
+        "amount": 21232,
+        "amount_in_pln": 21232
+    },
+    {
+        "date": "2021-02-26T18:46:22Z",
+        "type": "dp",
+        "payment_mean": "FMZ4SJ1IML12HBTPNEZW1XGO9H22SY",
+        "description": "Hefskarb",
+        "currency": "PLN",
+        "amount": 52563,
+        "amount_in_pln": 52563
+    },
+    {
+        "date": "2021-03-07T21:14:50Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Etrjmk",
+        "currency": "USD",
+        "amount": 98198,
+        "amount_in_pln": 368163
+    },
+    {
+        "date": "2021-03-12T23:52:55Z",
+        "type": "dp",
+        "payment_mean": "HGEOHRVRYE1WOTA2A4KDL3Q74E0959",
+        "description": "Vjkthuiku",
+        "currency": "EUR",
+        "amount": 66067,
+        "amount_in_pln": 299376
+    },
+    {
+        "date": "2021-03-15T06:01:30Z",
+        "type": "card",
+        "payment_mean": "Mxmybwzcy Ropna 4150********2591",
+        "description": "Qydxr",
+        "currency": "GBP",
+        "amount": 31718,
+        "amount_in_pln": 167452
+    },
+    {
+        "date": "2021-03-17T18:39:16Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Peotqn",
+        "currency": "EUR",
+        "amount": 61576,
+        "amount_in_pln": 279961
+    },
+    {
+        "date": "2021-03-25T22:37:32Z",
+        "type": "pay_by_link",
+        "payment_mean": "PKO",
+        "description": "Qaittquo",
+        "currency": "GBP",
+        "amount": 58380,
+        "amount_in_pln": 310564
+    },
+    {
+        "date": "2021-04-04T05:20:38Z",
+        "type": "dp",
+        "payment_mean": "9JX6PCFDYF4QF830HR45OHVQ1TPKNJ",
+        "description": "Cdwoo",
+        "currency": "PLN",
+        "amount": 11898,
+        "amount_in_pln": 11898
+    },
+    {
+        "date": "2021-04-07T23:27:26Z",
+        "type": "pay_by_link",
+        "payment_mean": "santander",
+        "description": "Thabxpci",
+        "currency": "EUR",
+        "amount": 15408,
+        "amount_in_pln": 70089
+    },
+    {
+        "date": "2021-04-11T18:17:35Z",
+        "type": "pay_by_link",
+        "payment_mean": "PKO",
+        "description": "Btpmg",
+        "currency": "EUR",
+        "amount": 6891,
+        "amount_in_pln": 30986
+    },
+    {
+        "date": "2021-04-22T19:01:00Z",
+        "type": "pay_by_link",
+        "payment_mean": "SGB",
+        "description": "Buryxhosx",
+        "currency": "PLN",
+        "amount": 63080,
+        "amount_in_pln": 63080
+    },
+    {
+        "date": "2021-04-25T01:17:53Z",
+        "type": "dp",
+        "payment_mean": "MQE41N1MIBNDE58WCRB7QBF21BK9LC",
+        "description": "Oepvlgmjt",
+        "currency": "EUR",
+        "amount": 7895,
+        "amount_in_pln": 35645
+    },
+    {
+        "date": "2021-04-26T00:04:47Z",
+        "type": "dp",
+        "payment_mean": "THF5FF8VN2F8G41AUL10JA2M7G6JM6",
+        "description": "Hrcopfr",
+        "currency": "GBP",
+        "amount": 67140,
+        "amount_in_pln": 348893
+    },
+    {
+        "date": "2021-05-04T06:13:26Z",
+        "type": "card",
+        "payment_mean": "Kghwjxzfp Zyfcomwkj 1708********6050",
+        "description": "Bpticy",
+        "currency": "USD",
+        "amount": 97423,
+        "amount_in_pln": 364011
+    },
+    {
+        "date": "2021-05-05T04:26:10Z",
+        "type": "card",
+        "payment_mean": "Ivntj Ivunq 9985********4222",
+        "description": "Rrumvzhr",
+        "currency": "USD",
+        "amount": 5943,
+        "amount_in_pln": 22314
+    },
+    {
+        "date": "2021-05-12T13:21:12Z",
+        "type": "card",
+        "payment_mean": "Zdfufrbc Eoxizvmxx 5314********4277",
+        "description": "Aignpvn",
+        "currency": "PLN",
+        "amount": 96073,
+        "amount_in_pln": 96073
+    },
+    {
+        "date": "2021-05-13T07:09:27Z",
+        "type": "card",
+        "payment_mean": "Kpwny Mkupgq 6752********4409",
+        "description": "Uaoxhnejc",
+        "currency": "PLN",
+        "amount": 31497,
+        "amount_in_pln": 31497
+    },
+    {
+        "date": "2021-05-14T15:36:27Z",
+        "type": "dp",
+        "payment_mean": "LT8JH14E129WOCB56B2V0JRCNTB2R5",
+        "description": "Vvjif",
+        "currency": "GBP",
+        "amount": 72709,
+        "amount_in_pln": 378697
+    },
+    {
+        "date": "2021-05-15T11:39:18Z",
+        "type": "pay_by_link",
+        "payment_mean": "mbank",
+        "description": "Cgylo",
+        "currency": "GBP",
+        "amount": 4717,
+        "amount_in_pln": 24568
+    },
+    {
+        "date": "2021-05-20T18:36:39Z",
+        "type": "card",
+        "payment_mean": "Vgpppodas Seeuiahv 8801********9029",
+        "description": "Cvtsgkv",
+        "currency": "GBP",
+        "amount": 52620,
+        "amount_in_pln": 273055
+    },
+    {
+        "date": "2021-05-27T19:39:32Z",
+        "type": "card",
+        "payment_mean": "Qvlvvfb Hrkiealgb 8929********6461",
+        "description": "Wkbxucab",
+        "currency": "GBP",
+        "amount": 88924,
+        "amount_in_pln": 457033
+    },
+    {
+        "date": "2021-05-28T12:44:02Z",
+        "type": "pay_by_link",
+        "payment_mean": "PKO",
+        "description": "Dsxhdr",
+        "currency": "EUR",
+        "amount": 99095,
+        "amount_in_pln": 440001
+    },
+    {
+        "date": "2021-05-29T17:51:11Z",
+        "type": "pay_by_link",
+        "payment_mean": "mbank",
+        "description": "Zsagfybq",
+        "currency": "GBP",
+        "amount": 36429,
+        "amount_in_pln": 187944
+    },
+    {
+        "date": "2021-05-30T22:42:41Z",
+        "type": "pay_by_link",
+        "payment_mean": "PKO",
+        "description": "Qqtbkffu",
+        "currency": "USD",
+        "amount": 42424,
+        "amount_in_pln": 154448
+    },
+    {
+        "date": "2021-06-04T11:02:12Z",
+        "type": "dp",
+        "payment_mean": "34YTSLYMY3ANGOAP69GS51S0HN93ST",
+        "description": "Qklua",
+        "currency": "USD",
+        "amount": 23203,
+        "amount_in_pln": 84013
+    },
+    {
+        "date": "2021-06-05T19:13:23Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Yuzdvsvji",
+        "currency": "USD",
+        "amount": 96399,
+        "amount_in_pln": 349041
+    },
+    {
+        "date": "2021-06-06T07:52:32Z",
+        "type": "card",
+        "payment_mean": "Gjsid Ktcjcwl 4837********8598",
+        "description": "Slxzaejz",
+        "currency": "USD",
+        "amount": 1416,
+        "amount_in_pln": 5127
+    },
+    {
+        "date": "2021-06-06T18:12:13Z",
+        "type": "dp",
+        "payment_mean": "WSXIN8RBYLW52H3WEQ1FGXA74HN3EW",
+        "description": "Ofsfu",
+        "currency": "PLN",
+        "amount": 47440,
+        "amount_in_pln": 47440
+    },
+    {
+        "date": "2021-06-09T16:08:01Z",
+        "type": "dp",
+        "payment_mean": "WTGPZC1SEDGMONFHDK45X32ITURK2V",
+        "description": "Yeeho",
+        "currency": "USD",
+        "amount": 51141,
+        "amount_in_pln": 185621
+    },
+    {
+        "date": "2021-06-12T09:55:02Z",
+        "type": "dp",
+        "payment_mean": "K2SAHCTWYHUMIIX6VPH8D5L0T3DOJZ",
+        "description": "Zpksxat",
+        "currency": "EUR",
+        "amount": 17438,
+        "amount_in_pln": 77224
+    },
+    {
+        "date": "2021-06-14T17:49:51Z",
+        "type": "card",
+        "payment_mean": "Gahou Gwcblqxd 0474********0083",
+        "description": "Gfrrjsh",
+        "currency": "GBP",
+        "amount": 74936,
+        "amount_in_pln": 387336
+    },
+    {
+        "date": "2021-06-23T15:45:00Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Nfinydla",
+        "currency": "EUR",
+        "amount": 13139,
+        "amount_in_pln": 58797
+    },
+    {
+        "date": "2021-07-01T13:12:57Z",
+        "type": "dp",
+        "payment_mean": "FLVF13O5TWG1DFQB3MSCD3786Y3NP6",
+        "description": "Eiglvfk",
+        "currency": "PLN",
+        "amount": 77859,
+        "amount_in_pln": 77859
+    },
+    {
+        "date": "2021-07-06T06:51:51Z",
+        "type": "card",
+        "payment_mean": "Bgugrkaa Igxyik 1931********4812",
+        "description": "Ryikmjdi",
+        "currency": "USD",
+        "amount": 66730,
+        "amount_in_pln": 250964
+    },
+    {
+        "date": "2021-07-16T09:00:35Z",
+        "type": "pay_by_link",
+        "payment_mean": "PKO",
+        "description": "Byedkg",
+        "currency": "GBP",
+        "amount": 71077,
+        "amount_in_pln": 377681
+    },
+    {
+        "date": "2021-07-16T22:00:43Z",
+        "type": "card",
+        "payment_mean": "Uvkqdgr Udcnlipzg 4245********6239",
+        "description": "Mrphetso",
+        "currency": "PLN",
+        "amount": 97849,
+        "amount_in_pln": 97849
+    },
+    {
+        "date": "2021-07-23T00:14:13Z",
+        "type": "dp",
+        "payment_mean": "Y8J17N5D3J1YM8Z6MCGERURSQ04SQC",
+        "description": "Tmgklz",
+        "currency": "USD",
+        "amount": 48417,
+        "amount_in_pln": 185098
+    },
+    {
+        "date": "2021-07-25T06:33:47Z",
+        "type": "dp",
+        "payment_mean": "P07FXZ3GF02UBF94D8L7DNZWIBH4TO",
+        "description": "Jycftxvtm",
+        "currency": "PLN",
+        "amount": 99319,
+        "amount_in_pln": 99319
+    },
+    {
+        "date": "2021-07-27T13:19:02Z",
+        "type": "pay_by_link",
+        "payment_mean": "PKO",
+        "description": "Vcdjeb",
+        "currency": "EUR",
+        "amount": 2423,
+        "amount_in_pln": 11018
+    },
+    {
+        "date": "2021-07-29T22:23:41Z",
+        "type": "card",
+        "payment_mean": "Ipvjxkttm Eawuz 9826********0850",
+        "description": "Xwvmf",
+        "currency": "PLN",
+        "amount": 81954,
+        "amount_in_pln": 81954
+    },
+    {
+        "date": "2021-07-30T07:00:58Z",
+        "type": "card",
+        "payment_mean": "Twqixqo Srcixrv 1578********7414",
+        "description": "Nkanyfiu",
+        "currency": "EUR",
+        "amount": 54351,
+        "amount_in_pln": 246378
+    },
+    {
+        "date": "2021-08-01T06:16:30Z",
+        "type": "dp",
+        "payment_mean": "237ZG8EAVYH3NEVYY6KPOO8O2C2D9S",
+        "description": "Qzbvex",
+        "currency": "EUR",
+        "amount": 70631,
+        "amount_in_pln": 320177
+    },
+    {
+        "date": "2021-08-03T15:49:18Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Uagln",
+        "currency": "GBP",
+        "amount": 17704,
+        "amount_in_pln": 93416
+    },
+    {
+        "date": "2021-08-07T20:51:31Z",
+        "type": "card",
+        "payment_mean": "Ixaoxbd Jdquep 2499********6054",
+        "description": "Oioscath",
+        "currency": "GBP",
+        "amount": 79237,
+        "amount_in_pln": 418981
+    },
+    {
+        "date": "2021-08-12T23:54:20Z",
+        "type": "dp",
+        "payment_mean": "1M8M502WZIMY9FGACISMDV0ZHU7ZJW",
+        "description": "Bmuptpk",
+        "currency": "PLN",
+        "amount": 28987,
+        "amount_in_pln": 28987
+    },
+    {
+        "date": "2021-08-14T08:19:45Z",
+        "type": "pay_by_link",
+        "payment_mean": "SGB",
+        "description": "Xxlktemu",
+        "currency": "PLN",
+        "amount": 36698,
+        "amount_in_pln": 36698
+    },
+    {
+        "date": "2021-08-17T00:05:51Z",
+        "type": "card",
+        "payment_mean": "Gszfs Ykpxzjfa 8584********3960",
+        "description": "Bvkhwulo",
+        "currency": "USD",
+        "amount": 829,
+        "amount_in_pln": 3183
+    },
+    {
+        "date": "2021-08-30T05:10:52Z",
+        "type": "dp",
+        "payment_mean": "BBB4YI64OUMI9NK8H1U7T4ULI66X95",
+        "description": "Gczrvume",
+        "currency": "GBP",
+        "amount": 17930,
+        "amount_in_pln": 94844
+    },
+    {
+        "date": "2021-09-04T01:29:09Z",
+        "type": "dp",
+        "payment_mean": "3BM2AUKQS7JYZKU1CND25E87BUESNU",
+        "description": "Uxvemoo",
+        "currency": "EUR",
+        "amount": 59285,
+        "amount_in_pln": 264606
+    },
+    {
+        "date": "2021-09-08T07:34:00Z",
+        "type": "pay_by_link",
+        "payment_mean": "santander",
+        "description": "Hkuasrg",
+        "currency": "GBP",
+        "amount": 4119,
+        "amount_in_pln": 21427
+    },
+    {
+        "date": "2021-09-14T12:07:13Z",
+        "type": "dp",
+        "payment_mean": "SLX9L4HC6QSSCCBR3GFAJDR1OLKGLW",
+        "description": "Pagxqbvj",
+        "currency": "EUR",
+        "amount": 62379,
+        "amount_in_pln": 280780
+    },
+    {
+        "date": "2021-09-26T04:18:05Z",
+        "type": "dp",
+        "payment_mean": "R254QYQAOFIT0FPKW31FX86VWSC1S3",
+        "description": "Bofkeve",
+        "currency": "PLN",
+        "amount": 23577,
+        "amount_in_pln": 23577
+    },
+    {
+        "date": "2021-09-26T12:08:01Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Zyngazn",
+        "currency": "USD",
+        "amount": 86661,
+        "amount_in_pln": 337085
+    },
+    {
+        "date": "2021-10-02T17:10:10Z",
+        "type": "card",
+        "payment_mean": "Vwzwlrq Tnozuya 5911********3847",
+        "description": "Etdcpgnmi",
+        "currency": "EUR",
+        "amount": 60680,
+        "amount_in_pln": 276385
+    },
+    {
+        "date": "2021-10-04T08:26:30Z",
+        "type": "pay_by_link",
+        "payment_mean": "SGB",
+        "description": "Aefmjjia",
+        "currency": "EUR",
+        "amount": 53711,
+        "amount_in_pln": 243928
+    },
+    {
+        "date": "2021-10-04T10:59:13Z",
+        "type": "card",
+        "payment_mean": "Idigzue Buxddfck 9711********8346",
+        "description": "Ilzxoqyio",
+        "currency": "EUR",
+        "amount": 94650,
+        "amount_in_pln": 429852
+    },
+    {
+        "date": "2021-10-06T12:01:17Z",
+        "type": "card",
+        "payment_mean": "Ecsziqv Xmkgvjc 1639********5443",
+        "description": "Kgncvdnb",
+        "currency": "USD",
+        "amount": 87794,
+        "amount_in_pln": 345328
+    },
+    {
+        "date": "2021-10-21T05:29:31Z",
+        "type": "pay_by_link",
+        "payment_mean": "SGB",
+        "description": "Iuxxs",
+        "currency": "GBP",
+        "amount": 41767,
+        "amount_in_pln": 224957
+    },
+    {
+        "date": "2021-10-21T21:02:30Z",
+        "type": "card",
+        "payment_mean": "Kcvasrncl Rdlcmd 8107********7305",
+        "description": "Iwexe",
+        "currency": "USD",
+        "amount": 57027,
+        "amount_in_pln": 222793
+    },
+    {
+        "date": "2021-10-30T21:05:24Z",
+        "type": "card",
+        "payment_mean": "Bkzxl Xskdwtpvz 6503********8658",
+        "description": "Nkfbw",
+        "currency": "USD",
+        "amount": 58028,
+        "amount_in_pln": 227794
+    },
+    {
+        "date": "2021-11-08T07:02:15Z",
+        "type": "dp",
+        "payment_mean": "R0I343ZHM0AB8UG4CVBRUXH4S1I4UZ",
+        "description": "Mbuiecdb",
+        "currency": "PLN",
+        "amount": 53505,
+        "amount_in_pln": 53505
+    },
+    {
+        "date": "2021-11-18T02:33:07Z",
+        "type": "card",
+        "payment_mean": "Wpycsxtg Otojx 5753********2697",
+        "description": "Cfbtf",
+        "currency": "EUR",
+        "amount": 84325,
+        "amount_in_pln": 388881
+    },
+    {
+        "date": "2021-11-25T13:37:49Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Ismlyb",
+        "currency": "PLN",
+        "amount": 62517,
+        "amount_in_pln": 62517
+    },
+    {
+        "date": "2021-11-28T07:38:08Z",
+        "type": "dp",
+        "payment_mean": "R0GFTH0ZJSSCKE4FLRPC62MJGVENOE",
+        "description": "Vsbttzhd",
+        "currency": "EUR",
+        "amount": 10228,
+        "amount_in_pln": 47281
+    },
+    {
+        "date": "2021-12-11T22:42:20Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Vttgys",
+        "currency": "EUR",
+        "amount": 61440,
+        "amount_in_pln": 279994
+    },
+    {
+        "date": "2021-12-19T17:35:21Z",
+        "type": "card",
+        "payment_mean": "Iumgjq Gsroly 8088********7930",
+        "description": "Xnakd",
+        "currency": "USD",
+        "amount": 56174,
+        "amount_in_pln": 227493
+    },
+    {
+        "date": "2021-12-22T22:30:03Z",
+        "type": "dp",
+        "payment_mean": "U09IVFTMWXMP8F59JMOE9UCCQL2CYF",
+        "description": "Yvotk",
+        "currency": "USD",
+        "amount": 47884,
+        "amount_in_pln": 194533
+    },
+    {
+        "date": "2021-12-23T19:08:12Z",
+        "type": "dp",
+        "payment_mean": "JXEJ1CP8P8626YYMUH2HU99UIQN6JE",
+        "description": "Qpftaprjv",
+        "currency": "PLN",
+        "amount": 44288,
+        "amount_in_pln": 44288
+    },
+    {
+        "date": "2021-12-25T11:58:41Z",
+        "type": "pay_by_link",
+        "payment_mean": "Gringota",
+        "description": "Yplgb",
+        "currency": "PLN",
+        "amount": 48384,
+        "amount_in_pln": 48384
+    },
+    {
+        "date": "2021-12-27T16:38:40Z",
+        "type": "pay_by_link",
+        "payment_mean": "mbank",
+        "description": "Bcvmik",
+        "currency": "USD",
+        "amount": 2176,
+        "amount_in_pln": 8786
+    }
+]

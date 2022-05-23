@@ -74,3 +74,12 @@ def test_distant_date_request(apiclient):
     assert response.json() == correct_response
 
 
+def test_big_request(apiclient):
+    url = reverse('report')
+    pbl_data = json_correct_data('big_request.json')
+    response = apiclient.post(url, pbl_data, format="json")
+    assert response.status_code == status.HTTP_200_OK
+    correct_response = request_proccessed('big_response')
+    assert response.json() == correct_response
+
+
