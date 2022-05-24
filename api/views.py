@@ -5,6 +5,13 @@ from .models import Customer
 import json
 from .utils import proccess_payment_mean, InvalidPaymentData, UnsupportedDate
 
+MESSAGES = {
+    'payment': "Provided data is incorrect!",
+    'date': "Provied date is incorrect!",
+    'customer': "Customer does not exist!",
+    'customer_id': "No customer id was provided"
+}
+
 
 @api_view(['POST'])
 def create_report(request) -> Response:
@@ -13,9 +20,9 @@ def create_report(request) -> Response:
         for key in request.data.keys():
             proccess_payment_mean(key, request.data, reports)
     except InvalidPaymentData:
-        return Response("Invalid data!", status=status.HTTP_400_BAD_REQUEST)
+        return Response({"message": MESSAGES["payment"]}, status=status.HTTP_400_BAD_REQUEST)
     except UnsupportedDate:
-        return Response("Invalid data!", status=status.HTTP_400_BAD_REQUEST)
+        return Response({"message": MESSAGES["date"]}, status=status.HTTP_400_BAD_REQUEST)
     return Response(sorted(reports, key=lambda x: x["date"]))
 
 
@@ -33,11 +40,11 @@ def create_customer_report(request):
         if created:
             st = status.HTTP_201_CREATED
     except InvalidPaymentData:
-        return Response("Invalid data!", status=status.HTTP_400_BAD_REQUEST)
+        return Response({"message": MESSAGES["payment"]}, status=status.HTTP_400_BAD_REQUEST)
     except UnsupportedDate:
-        return Response("Invalid data!", status=status.HTTP_400_BAD_REQUEST)
+        return Response({"message": MESSAGES["date"]}, status=status.HTTP_400_BAD_REQUEST)
     except KeyError:
-        return Response("Invalid data!", status=status.HTTP_400_BAD_REQUEST)
+        return Response({"message": MESSAGES["customer_id"]}, status=status.HTTP_400_BAD_REQUEST)
     return Response(sorted(reports, key=lambda x: x["date"]), status=st)
 
 
@@ -46,5 +53,5 @@ def get_customer_report(request, customer_id):
     try:
         customer = Customer.objects.get(customer_id=customer_id)
     except Customer.DoesNotExist:
-        return Response("Invalid data!", status=status.HTTP_404_NOT_FOUND)
+        return Response({"message": MESSAGES["customer"]}, status=status.HTTP_404_NOT_FOUND)
     return Response(sorted(json.loads(customer.customer_data), key=lambda x: x["date"]))
