@@ -2,6 +2,7 @@ from email.policy import default
 from random import choices
 from rest_framework import serializers
 from rest_framework.serializers import Serializer
+from .models import Customer
 
 
 class ReportSerializer(Serializer):
@@ -31,5 +32,9 @@ class CardSerializer(ReportSerializer):
     card_number = serializers.CharField(max_length=200)
 
 
+class CustomerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Customer
+        fields = ['customer_id', 'customer_data']
 
 

@@ -8,20 +8,18 @@ import json
 import string
 
 
-@patch("api.views.perform_api_call", perform_patched_call)
+@patch("api.utils.perform_api_call", perform_patched_call)
 def test_big_request(apiclient):
     url = reverse('report')
     pbl_data = json_correct_data('big_data.json')
     response = apiclient.post(url, pbl_data, format="json")
     assert response.status_code == status.HTTP_200_OK
     correct_response = request_proccessed('big_data_response')
-    with open('dwa.json', 'w') as fh:
-            json.dump(response.json(), fh)
     for report in response.json():
         assert report in correct_response
 
 
-@patch("api.views.perform_api_call", perform_patched_call)
+@patch("api.utils.perform_api_call", perform_patched_call)
 def test_date_validation(apiclient):
     url = reverse('report')
     pbl_data = json_correct_data('example_request.json')
@@ -32,7 +30,7 @@ def test_date_validation(apiclient):
     assert response.status_code == status.HTTP_400_BAD_REQUEST
 
 
-@patch("api.views.perform_api_call", perform_patched_call)
+@patch("api.utils.perform_api_call", perform_patched_call)
 def test_amount_validation(apiclient):
     url = reverse('report')
     pbl_data = json_correct_data('example_request.json')
@@ -49,7 +47,7 @@ def generate_faulty_currency():
     return curr
 
 
-@patch("api.views.perform_api_call", perform_patched_call)
+@patch("api.utils.perform_api_call", perform_patched_call)
 def test_currency_validation(apiclient):
     url = reverse('report')
     pbl_data = json_correct_data('example_request.json')
