@@ -1,16 +1,12 @@
 from datetime import datetime, timedelta
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
 from rest_framework import status
-from yaml import serialize
 from .serializers import PayByLinkSerializer, DirectPaymentSerializer, CardSerializer
 from rest_framework import serializers
 from functools import lru_cache
 import requests
 from math import floor
 import concurrent.futures
-from .models import Customer
-import json
+
 
 
 DAYS_BACKUP = 3
