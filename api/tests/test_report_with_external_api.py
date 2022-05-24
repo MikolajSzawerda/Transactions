@@ -1,33 +1,7 @@
-from urllib import response
 from rest_framework import status
-from rest_framework.test import APITestCase, APIClient
 from django.urls import reverse
-import os
-import json
+from .utils import json_correct_data, request_proccessed, apiclient
 import pytest
-# from parameterized import parameterized
-
-
-def json_correct_data(filename='data_2.json'):
-    module_dir = os.path.dirname(__file__)
-    file_path = os.path.join(module_dir, filename)
-    with open(file_path, 'r') as fh:
-        data = json.load(fh)
-    return data
-
-
-def request_proccessed(file_name):
-    module_dir = os.path.dirname(__file__)
-    file_path = os.path.join(module_dir, f'{file_name}.json')
-    with open(file_path, 'r') as fh:
-        data = json.load(fh)
-    return data
-
-
-
-@pytest.fixture
-def apiclient():
-    return APIClient()
 
 
 @pytest.mark.parametrize('report_type', ['pay_by_link', 'dp' , 'card'])
@@ -81,5 +55,3 @@ def test_big_request(apiclient):
     assert response.status_code == status.HTTP_200_OK
     correct_response = request_proccessed('big_response')
     assert response.json() == correct_response
-
-

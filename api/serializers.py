@@ -1,11 +1,19 @@
+from email.policy import default
+from random import choices
 from rest_framework import serializers
 from rest_framework.serializers import Serializer
 
 
 class ReportSerializer(Serializer):
+    POSSIBLE_CURRENCIES = [
+        ('PLN', 'PLN'),
+        ('EUR', 'EUR'),
+        ('GBP', 'GBP'),
+        ('USD', 'USD')
+    ]
     created_at = serializers.DateTimeField()
-    currency = serializers.CharField(max_length=200)
-    amount = serializers.IntegerField()
+    currency = serializers.ChoiceField(choices=POSSIBLE_CURRENCIES)
+    amount = serializers.IntegerField(min_value=0)
     description = serializers.CharField(max_length=200)
 
 
